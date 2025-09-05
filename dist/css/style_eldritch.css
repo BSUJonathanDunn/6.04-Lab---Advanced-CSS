@@ -1,0 +1,254 @@
+/* Eldritch Page Styles */
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(circle at top, #0b0b0b, #1a1a1a);
+  color: #e6e6e6;
+}
+
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #4a0c0c;
+  box-shadow: 0 0 20px #4a0c0c inset;
+}
+
+#greenbox {
+  display: grid;
+  grid-template-columns: 80%, 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "bank nav"
+    "logo nav"
+    "offers nav";
+}
+
+#bank {
+  grid-area: bank;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+}
+
+#offernav {
+  grid-area: offers;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+#nav {
+    grid-area: nav;
+
+}
+
+#bank ul {
+  list-style: none;        
+  display: flex;           
+  justify-content: space-evenly; 
+  padding-top: 10px;   
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 20px;            
+  margin: 0;                
+  gap: 30px;
+}
+#offernav ul {
+  list-style: none;        
+  display: flex;           
+  justify-content: space-evenly; 
+  padding: 10px;               
+  margin: 0;                
+  gap: 30px;
+}
+
+#bank  a,
+#offernav a,
+.dropdown a {
+  text-decoration: none;
+  color: #a02c2c;
+  font-weight: bold;
+  transition: 0.3s all ease;
+}
+
+#bank a:hover,
+#offernav a:hover,
+.dropdown a:hover {
+  color: #f7d01c;
+  text-shadow: 0 0 5px #f7d01c, 0 0 10px #f7d01c;
+}
+
+#bank p {
+  color: #606060;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#logo {
+  display: flex;
+  flex-wrap: wrap;      
+  align-items: center;
+  gap: 0;  
+}
+
+.logo {
+  filter: drop-shadow(0 0 8px #8b0000);
+  transition: transform 0.3s ease;
+  flex: 1 1 300px;      
+  max-width: 20%;
+  min-width: 20%;
+  height: auto;
+}
+
+.logo:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+.logotextcontainer img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 200px;
+  max-width: 40%;   
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Uncial Antiqua', serif; 
+  font-size: 16px;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #cc3300;
+}
+
+.container {
+  text-align: center;
+  margin: 5px;
+  font-size: 13px;
+}
+
+.offer {
+  background: rgba(20, 10, 20, 0.8);
+  border: 1px solid #4a0c0c;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #4a0c0c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  width: 400px;
+  margin: 4px;
+  text-align: center;
+}
+
+.offer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #ff6600;
+}
+
+.offer-title {
+  font-family: 'Uncial Antiqua', serif;
+  color: #cc3300;
+  text-shadow: 0 0 8px #cc3300, 0 0 15px #ff6600;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2f1111;
+  padding: 15px;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0; 
+  border-collapse: collapse;  
+}
+
+th, td {
+  border-bottom: 1px solid #4a0c0c;
+  text-align: left;
+  margin: 0;
+}
+
+th {
+  background: rgba(70, 20, 20, 0.9);
+  color: #ff6600;
+  text-shadow: 0 0 5px #ff6600;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px;
+}
+
+td {
+  background: rgba(30, 15, 15, 0.7);
+  padding: 20px 10px;
+  font-weight: lighter;
+}
+
+.final-value {
+  color: #ff9900;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff9900, 0 0 10px #cc3300;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-btn {
+  background: #1a0a1a;
+  color: #ff6600;
+  border: 1px solid #4a0c0c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff6600;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: #2b0b2b;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #110a11;
+  border: 1px solid #4a0c0c;
+  box-shadow: 0 0 15px #4a0c0c;
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 100;
+  color: #ffffff;
+}
+
+.leftpointer {
+  font-weight: bolder;
+}
+
+.dropdown li {
+  margin: 0.3rem 0;
+}
+
+.dropdown li a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Show dropdown on active (controlled via JS) */
+.dropdown.active {
+  display: block;
+}
+

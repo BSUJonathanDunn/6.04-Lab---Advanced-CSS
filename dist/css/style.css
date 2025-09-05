@@ -1,0 +1,237 @@
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  text-align: center;
+}
+
+h1 { 
+  font-size: 16px;
+  color: #444444;
+}
+
+table {
+  width: 100%;
+  background-color: #ffffff;
+  border-spacing: 0; 
+  border-collapse: collapse;  
+}
+
+td {
+  padding: 20px 10px;
+  font-weight: lighter;
+  color: #444444;
+}
+
+th {
+  color: #777777;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px;
+}
+
+th, td {
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.container {
+  text-align: center;
+  margin: 5px;
+  font-size: 13px;
+}
+
+.offer {
+  display: inline-block;
+  width: 400px;
+  margin: 4px;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+.offer-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00b3b3;
+  padding: 15px;
+  margin: 0;
+}
+
+.offer-contents {
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.final-value {
+  font-weight: bold;
+  color: #2222ff;
+}
+
+.logo {
+  flex: 1 1 300px;      
+  max-width: 20%;
+  min-width: 20%;
+  height: auto;
+}
+
+.logo:hover {
+  animation: logorotate 1s ease-in-out 0s 1;
+}
+  
+@keyframes logorotate {
+  0% {transform: rotate(20deg);}
+  25% {transform: rotate(-20deg);}
+  75% {transform: rotate(20deg);}
+  1000% {transform: rotate(-20deg);}
+}
+
+.logotext, .mototext {
+  display: block;
+  max-width: 70%;
+  min-width: 60%;
+  height: auto;
+}
+
+.logotextcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keep both flush left */
+  flex: 1 1 200px;         /* scales down when needed */
+  max-width: 40%;   
+  justify-content: center;
+}
+
+#greenbox {
+  display: grid;
+  grid-template-columns: 80%, 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "bank nav"
+    "logo nav"
+    "offers nav";
+}
+
+#logo {
+ display: flex;
+  flex-wrap: wrap;      
+  align-items: center;
+  gap: 0;   
+}
+
+#bank {
+  grid-area: bank;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+  border-bottom: 1px solid rgb(3, 48, 3);
+  background-color:#017979 
+}
+
+#bank a, #offernav a {
+  text-decoration: none;
+  color: rgb(217, 240, 178);
+  font-weight: lighter;
+}
+
+#bank a:hover, #offernav a:hover {
+  color:#faf05e;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
+#bank ul{
+  list-style: none;        
+  display: flex;           
+  justify-content: space-evenly; 
+  padding-top: 10px;   
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 20px;            
+  margin: 0;                
+  gap: 30px;
+}
+
+#bank p {
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#offernav {
+  grid-area: offers;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid rgb(3, 48, 3);
+  background-color:#017979 
+}
+
+#offernav ul {
+  list-style: none;        
+  display: flex;           
+  justify-content: space-evenly; 
+  padding: 10px;               
+  margin: 0;                
+  gap: 30px;
+}
+
+#nav {
+  grid-area: nav;
+  background-color: #00b3b3;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #00b3b3;
+  border: none;
+  font-size: 14pt;
+}
+
+.menu-btn:hover {
+  background-color: #35ffff;
+}
+
+.leftpointer {
+  font-weight: bolder;
+}
+
+/* Hidden by default */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  background: #35ffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background: #444;
+}
+
+.dropdown.active {
+  display: block;
+}

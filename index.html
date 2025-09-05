@@ -6,20 +6,131 @@
   <title>CS208 - Starter Code (UPDATE ME)!</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <header>
+    <div id="greenbox">
+      <nav id="bank">
+        <p id="servicespadding">Services:</p>
+        <ul>
+          <li><a href="#">Human</a></li>
+          <li><a href="#">Magical</a></li>
+          <li><a href="#">Eldritch</a></li>
+        </ul>
+      </nav>
+      <section id="logo">
+        <img class="logo" id="leplogo" src="dist/img/LepLogo.png" alt="Leprechaun Loans Logo">
+        <audio id="hover-sound" src="dist/audio/Laugh.wav" preload="auto"></audio>
+        <span class="logotextcontainer">
+          <img class="logotext" src="dist/img/LuckyLoans.png" alt="Lucky Loans Word Art"> 
+          <img class="mototext" src="dist/img/Moto.png" alt="We are the gold at the end of the rainbow">
+        </span>
+      </section>
+      <nav id="offernav">
+        <ul>
+          <li><a href="#">Currency</a></li>
+          <li><a href="#">Your Vault</a></li>
+          <li><a href="#">Dungeon Loans</a></li>
+          <li><a href="#">Chariot</a></li>
+          <li><a href="#">Investing</a></li>
+          <li><a href="#">Ascendance & Quests</a></li>
+          <li><a href="#">Voyage</a></li>
+        </ul>
+      </nav>
+      <nav id="nav">
+        <nav class="menu">
+        <button id="menu-btn" class="menu-btn"><span class="leftpointer">&lt;</span> Languages</button>
+          <ul id="dropdown" class="dropdown">
+            <li><a href="#">English</a></li>
+            <li><a href="index_leprechaun.html">Leprechaun (Irish)</a></li>
+            <li><a href="index_fairy.html">Fairy</a></li>
+            <li><a href="index_eldritch.html">Eldritch</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+    <h1>Comparison of Dealer Incentives and Loan Offers</h1>
+  </header>
+  
+  <div class="container">
+    <section class="offer">
+      <h2 class="offer-title">Purchase Offer 1</h2>
+      <div class="offer-contents">
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Purchase Price:</td>
+          <td>$33,500</td>
+        </tr>
+        <tr>
+          <td>Cash Incentive/rebate:</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Loan term (months):</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Annual percentage rate (APR):</td>
+          <td>3.2</td>
+        </tr>
+        <tr>
+          <td>Monthly payment:</td>
+          <td>$725.33</td>
+        </tr>
+        <tr>
+          <td>Total cost:</td>
+          <td class="final-value">$34,815.62</td>
+        </tr>
+      </table>
+      </div>
+      
+    </section>
+    
+    <section class="offer">
+      <h2 class="offer-title">Purchase Offer 2</h2>
+      <div class="offer-contents">
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Purchase Price:</td>
+          <td>$33,500</td>
+        </tr>
+        <tr>
+          <td>Cash Incentive/rebate:</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Loan term (months):</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Annual percentage rate (APR):</td>
+          <td>4.1</td>
+        </tr>
+        <tr>
+          <td>Monthly payment:</td>
+          <td>$746.59</td>
+        </tr>
+        <tr>
+          <td>Total cost:</td>
+          <td class="final-value">$35,836.15</td>
+        </tr>
+      </table>
+      </div>
+    </section>
+  </div>
 
-  <h2 id="joke-display"></h2>
+  <script src="dist/javascript/script.js"></script>
+
 </body>
 
 </html>
