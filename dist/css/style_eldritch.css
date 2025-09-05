@@ -1,5 +1,4 @@
 /* Eldritch Page Styles */
-
 body {
   margin: 0;
   font-family: 'Cinzel', serif;
@@ -13,6 +12,40 @@ header {
   text-align: center;
   border-bottom: 2px solid #4a0c0c;
   box-shadow: 0 0 20px #4a0c0c inset;
+}
+
+h1 {
+  font-family: 'Uncial Antiqua', serif; 
+  font-size: 16px;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600, 0 0 20px #cc3300;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0; 
+  border-collapse: collapse;  
+}
+
+th {
+  background: rgba(70, 20, 20, 0.9);
+  color: #ff6600;
+  text-shadow: 0 0 5px #ff6600;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px;
+}
+
+td {
+  background: rgba(30, 15, 15, 0.7);
+  padding: 20px 10px;
+  font-weight: lighter;
+}
+
+th, td {
+  border-bottom: 1px solid #4a0c0c;
+  text-align: left;
+  margin: 0;
 }
 
 #greenbox {
@@ -33,18 +66,6 @@ header {
   height: 30px;
 }
 
-#offernav {
-  grid-area: offers;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-}
-
-#nav {
-    grid-area: nav;
-
-}
 
 #bank ul {
   list-style: none;        
@@ -57,6 +78,21 @@ header {
   margin: 0;                
   gap: 30px;
 }
+
+#bank p {
+  color: #606060;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#offernav {
+  grid-area: offers;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
 #offernav ul {
   list-style: none;        
   display: flex;           
@@ -66,26 +102,9 @@ header {
   gap: 30px;
 }
 
-#bank  a,
-#offernav a,
-.dropdown a {
-  text-decoration: none;
-  color: #a02c2c;
-  font-weight: bold;
-  transition: 0.3s all ease;
-}
+#nav {
+    grid-area: nav;
 
-#bank a:hover,
-#offernav a:hover,
-.dropdown a:hover {
-  color: #f7d01c;
-  text-shadow: 0 0 5px #f7d01c, 0 0 10px #f7d01c;
-}
-
-#bank p {
-  color: #606060;
-  font-weight: bold;
-  padding-left: 10px;
 }
 
 #logo {
@@ -93,6 +112,18 @@ header {
   flex-wrap: wrap;      
   align-items: center;
   gap: 0;  
+}
+
+#bank  a, #offernav a, .dropdown a {
+  text-decoration: none;
+  color: #a02c2c;
+  font-weight: bold;
+  transition: 0.3s all ease;
+}
+
+#bank a:hover, #offernav a:hover {
+  color: #f7d01c;
+  text-shadow: 0 0 5px #f7d01c, 0 0 10px #f7d01c;
 }
 
 .logo {
@@ -115,13 +146,6 @@ header {
   flex: 1 1 200px;
   max-width: 40%;   
   justify-content: center;
-}
-
-h1 {
-  font-family: 'Uncial Antiqua', serif; 
-  font-size: 16px;
-  color: #ff6600;
-  text-shadow: 0 0 10px #ff6600, 0 0 20px #cc3300;
 }
 
 .container {
@@ -158,33 +182,6 @@ h1 {
   margin: 0;
 }
 
-table {
-  width: 100%;
-  border-spacing: 0; 
-  border-collapse: collapse;  
-}
-
-th, td {
-  border-bottom: 1px solid #4a0c0c;
-  text-align: left;
-  margin: 0;
-}
-
-th {
-  background: rgba(70, 20, 20, 0.9);
-  color: #ff6600;
-  text-shadow: 0 0 5px #ff6600;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 10px;
-}
-
-td {
-  background: rgba(30, 15, 15, 0.7);
-  padding: 20px 10px;
-  font-weight: lighter;
-}
-
 .final-value {
   color: #ff9900;
   font-weight: bold;
@@ -212,6 +209,10 @@ td {
   text-shadow: 0 0 10px #ffcc00;
 }
 
+.leftpointer {
+  font-weight: bolder;
+}
+
 .dropdown {
   display: none;
   position: absolute;
@@ -231,15 +232,11 @@ td {
   color: #ffffff;
 }
 
-.leftpointer {
-  font-weight: bolder;
-}
-
 .dropdown li {
-  margin: 0.3rem 0;
+  margin: 0;
 }
 
-.dropdown li a:hover {
+.dropdown a:hover {
   color: #ffcc00;
   text-shadow: 0 0 8px #ffcc00;
   display: block;
@@ -247,7 +244,6 @@ td {
   text-decoration: none;
 }
 
-/* Show dropdown on active (controlled via JS) */
 .dropdown.active {
   display: block;
 }

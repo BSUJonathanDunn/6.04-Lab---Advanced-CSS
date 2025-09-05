@@ -1,6 +1,6 @@
 body {
   font-family: Roboto, Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: #930053;
 }
 
 header {
@@ -14,19 +14,21 @@ h1 {
 
 table {
   width: 100%;
-  background-color: #ffffff;
   border-spacing: 0; 
-  border-collapse: collapse;  
+  border-collapse: separate; 
+  overflow: hidden; 
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(29, 33, 28)
 }
 
 td {
   padding: 20px 10px;
   font-weight: lighter;
-  color: #444444;
+  color: #034fff;
 }
 
 th {
-  color: #777777;
+  color: #ff0890;
   font-weight: bold;
   font-size: 12px;
   padding: 10px;
@@ -35,7 +37,15 @@ th {
 th, td {
   margin: 0;
   text-align: left;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #ff0195;
+}
+
+table tr:nth-child(even) {
+  background-color: #b4ff63;
+}
+
+table tr:nth-child(odd) {
+  background-color: #8afefe;
 }
 
 .container {
@@ -49,26 +59,56 @@ th, td {
   width: 400px;
   margin: 4px;
   text-align: center;
-  border: 1px solid #cccccc;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 15px #fbff1b;
+}
+
+#offer1 {
+  animation: fly1 6s cubic-bezier(.42,.01,.58,1) 2s infinite;
+}
+
+#offer2 {
+  animation: fly2 6s cubic-bezier(.42,.01,.58,1) 2s infinite;
+}
+
+@keyframes fly1 {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(3px, -2px); }
+  50%  { transform: translate(-2px, 2px); }
+  75%  { transform: translate(1px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes fly2 {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(-3px, 2px); }
+  50%  { transform: translate(2px, -1px); }
+  75%  { transform: translate(-1px, 3px); }
+  100% { transform: translate(0px, 0px); }
 }
 
 .offer-title {
   font-size: 14px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #00b3b3;
+  color: #d56a1d;
+  background-color: #95ffbe;
   padding: 15px;
   margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .offer-contents {
   padding: 20px;
-  background-color: #fafafa;
+  background-color: #8a22ad;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .final-value {
   font-weight: bold;
-  color: #2222ff;
+  color: #0b153b;
 }
 
 .logo {
@@ -76,17 +116,15 @@ th, td {
   max-width: 20%;
   min-width: 20%;
   height: auto;
+  animation: flutter 8s ease-in-out 0s infinite;
 }
 
-.logo:hover {
-  animation: logorotate 1s ease-in-out 0s 1;
-}
-  
-@keyframes logorotate {
-  0% {transform: rotate(20deg);}
-  25% {transform: rotate(-20deg);}
-  75% {transform: rotate(20deg);}
-  1000% {transform: rotate(-20deg);}
+@keyframes flutter {
+  0%   { transform: translate(20px, 0px) rotate(5deg); }
+  25%  { transform: translate(-4px, -12px) rotate(-2deg);}
+  50%  { transform: translate(-4px, 12px) rotate(0deg); }
+  75%  { transform: translate(-12px, -5px) rotate(-3deg); }
+  100% { transform: translate(20px, 0px) rotate(5deg); }
 }
 
 .logotext, .mototext {
@@ -117,9 +155,11 @@ th, td {
 
 #logo {
  display: flex;
-  flex-wrap: wrap;      
-  align-items: center;
-  gap: 0;   
+ grid-area: logo;
+ flex-wrap: wrap;      
+ align-items: center;
+ gap: 0;   
+ background: radial-gradient(circle at right, #ffc002, #fff261, #930053 86%)
 }
 
 #bank {
@@ -234,42 +274,4 @@ th, td {
 
 .dropdown.active {
   display: block;
-}
-
-.sparkle {
-  position: relative; /* keeps sparkles positioned relative to this element */
-  display: inline-block;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 0 0 10px gold;
-  z-index: -1; /* keeps text above sparkles */
-}
-
-.sparkle::before,
-.sparkle::after {
-  content: "✦";
-  position: absolute;
-  color: gold;
-  font-size: 1rem;
-  opacity: 0;
-  animation: sparkle 2s infinite;
-  z-index: -2;
-}
-
-.sparkle::before {
-  top: -20px;
-  left: 20%;
-  animation-delay: 0.5s;
-}
-
-.sparkle::after {
-  bottom: -20px;
-  right: 30%;
-  animation-delay: 1.2s;
-}
-
-@keyframes sparkle {
-  0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
-  50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
 }
