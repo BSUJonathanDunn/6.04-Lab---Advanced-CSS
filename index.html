@@ -1,136 +1,156 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lucky Loans - Truly Golden</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/lep/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="dist/css/style.css">
-</head>
-
-<body>
-  <header>
-    <div id="greenbox">
-      <nav id="bank">
-        <p id="servicespadding">Services:</p>
-        <ul>
-          <li><a href="#">Human</a></li>
-          <li><a href="#">Magical</a></li>
-          <li><a href="#">Eldritch</a></li>
-        </ul>
-      </nav>
-      <section id="logo">
-        <img class="logo" id="leplogo" src="dist/img/LepLogo.png" alt="Leprechaun Loans Logo">
-        <audio id="hover-sound" src="dist/audio/Laugh.wav" preload="auto"></audio>
-        <span class="logotextcontainer">
-          <img class="logotext" src="dist/img/LuckyLoans.png" alt="Lucky Loans Word Art"> 
-          <img class="mototext" src="dist/img/Moto.png" alt="We are the gold at the end of the rainbow">
-        </span>
-      </section>
-      <nav id="offernav">
-        <ul>
-          <li><a href="#">Currency</a></li>
-          <li><a href="#">Your Vault</a></li>
-          <li><a href="#">Dungeon Loans</a></li>
-          <li><a href="#">Chariot</a></li>
-          <li><a href="#">Investing</a></li>
-          <li><a href="#">Ascendance & Quests</a></li>
-          <li><a href="#">Voyage</a></li>
-        </ul>
-      </nav>
-      <nav id="nav">
-        <nav class="menu">
-        <button id="menu-btn" class="menu-btn"><span class="leftpointer">&lt;</span> Languages</button>
-          <ul id="dropdown" class="dropdown">
-            <li><a href="#">English</a></li>
-            <li><a href="index_leprechaun.html">Leprechaun (Irish)</a></li>
-            <li><a href="index_fairy.html">Fairy</a></li>
-            <li><a href="index_eldritch.html">Eldritch</a></li>
+  <body>
+    <header>
+      <div id="headergrid">
+        <nav id="services">
+          <p id="servicespadding">Services:</p>
+          <ul>
+            <li><a href="construction.html">Human</a></li>
+            <li><a href="construction.html">Magical</a></li>
+            <li><a href="construction.html">Eldritch</a></li>
           </ul>
         </nav>
-      </nav>
-    </div>
-    <h1>Comparison of Dealer Incentives and Loan Offers</h1>
-  </header>
+
+        <section id="logo">
+          <img class="logo" id="leplogo" src="img/lep/LepLogo.png" alt="Leprechaun Loans Logo">
+          <audio id="hover-sound" src="audio/Laugh.wav" preload="auto"></audio>
+          <span class="logotextcontainer">
+            <img class="logotext" src="img/lep/LuckyLoans.png" alt="Lucky Loans Word Art"> 
+            <img class="mototext" src="img/lep/Moto.png" alt="We are the gold at the end of the rainbow">
+          </span>
+        </section>
+
+        <nav id="offernav">
+          <ul>
+            <li><a href="construction.html">Currency</a></li>
+            <li><a href="construction.html">Your Vault</a></li>
+            <li><a href="construction.html">Dungeon Loans</a></li>
+            <li><a href="construction.html">Chariot</a></li>
+            <li><a href="construction.html">Investing</a></li>
+            <li><a href="construction.html">Ascendance & Quests</a></li>
+            <li><a href="construction.html">Voyage</a></li>
+          </ul>
+        </nav>
+
+        <nav id="sidenav">
+          <div class="menu">
+            <button id="menu-btn" class="menu-btn"><span class="leftpointer">&lt;</span>Languages</button>
+            <ul id="dropdown" class="dropdown">
+              <li><a href="#">Leprechaun</a></li>
+              <li><a href="index_fairy.html">Fairy</a></li>
+              <li><a href="index_eldritch.html">Eldritch</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <h1>Comparison of Dealer Incentives and Loan Offers</h1>
+    </header>
   
-  <div class="container">
-    <section class="offer">
-      <h2 class="offer-title">Purchase Offer 1</h2>
-      <div class="offer-contents">
-      <table>
-        <tr>
-          <th>Item</th>
-          <th>Cost</th>
-        </tr>
-        <tr>
-          <td>Purchase Price:</td>
-          <td>$33,500</td>
-        </tr>
-        <tr>
-          <td>Cash Incentive/rebate:</td>
-          <td>$0</td>
-        </tr>
-        <tr>
-          <td>Loan term (months):</td>
-          <td>48</td>
-        </tr>
-        <tr>
-          <td>Annual percentage rate (APR):</td>
-          <td>3.2</td>
-        </tr>
-        <tr>
-          <td>Monthly payment:</td>
-          <td>$725.33</td>
-        </tr>
-        <tr>
-          <td>Total cost:</td>
-          <td class="final-value">$34,815.62</td>
-        </tr>
-      </table>
-      </div>
-      
-    </section>
+    <div class="container">
+      <section class="offer">
+        <h2 class="offer-title">Purchase Offer 1</h2>
+
+        <div class="offer-contents">
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Cost</th>
+            </tr>
+            <tr>
+              <td>Purchase Price:</td>
+              <td>$33,500</td>
+            </tr>
+            <tr>
+              <td>Cash Incentive/rebate:</td>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>Loan term (months):</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>Annual percentage rate (APR):</td>
+              <td>3.2</td>
+            </tr>
+            <tr>
+              <td>Monthly payment:</td>
+              <td>$725.33</td>
+            </tr>
+            <tr>
+              <td>Total cost:</td>
+              <td class="final-value">$34,815.62</td>
+            </tr>
+          </table>
+        </div>
+      </section>
     
-    <section class="offer">
-      <h2 class="offer-title">Purchase Offer 2</h2>
-      <div class="offer-contents">
-      <table>
-        <tr>
-          <th>Item</th>
-          <th>Cost</th>
-        </tr>
-        <tr>
-          <td>Purchase Price:</td>
-          <td>$33,500</td>
-        </tr>
-        <tr>
-          <td>Cash Incentive/rebate:</td>
-          <td>$500</td>
-        </tr>
-        <tr>
-          <td>Loan term (months):</td>
-          <td>48</td>
-        </tr>
-        <tr>
-          <td>Annual percentage rate (APR):</td>
-          <td>4.1</td>
-        </tr>
-        <tr>
-          <td>Monthly payment:</td>
-          <td>$746.59</td>
-        </tr>
-        <tr>
-          <td>Total cost:</td>
-          <td class="final-value">$35,836.15</td>
-        </tr>
-      </table>
+      <section class="offer">
+        <h2 class="offer-title">Purchase Offer 2</h2>
+
+        <div class="offer-contents">
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Cost</th>
+            </tr>
+            <tr>
+              <td>Purchase Price:</td>
+              <td>$33,500</td>
+            </tr>
+            <tr>
+              <td>Cash Incentive/rebate:</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>Loan term (months):</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>Annual percentage rate (APR):</td>
+              <td>4.1</td>
+            </tr>
+            <tr>
+              <td>Monthly payment:</td>
+              <td>$746.59</td>
+            </tr>
+            <tr>
+              <td>Total cost:</td>
+              <td class="final-value">$35,836.15</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div>
+        <h3 id="legaltitle">Arcane Disclosure:</h3>
+        <p id="legal">All loans, vault services, and treasures offered by Lucky Loans are bound by the laws of the 
+           Realm of Fortune and the Coven of Coin. Rates, terms, and rewards may fluctuate with the shifting 
+           winds of magic and the phases of the Faerie Moon. While every precaution is taken to ensure 
+           transparency and protection of your vault, unforeseen eldritch anomalies may affect interest or 
+           repayment schedules. By venturing forth with Lucky Loans, you accept the enchantments, charms, 
+           and bindings herein, and acknowledge that no goblin, fairy, or other mystical entity may alter 
+           these covenants outside the sanctioned spell of our ledger. Offerings are subject to availability 
+           of gold, luck, and cosmic alignment.<br><br>
+           All images on these sites were made with DeepAI using various styles.<br>
+           Word art was done in InkPx word art generator. Favicon from flaticon.com by Umeicon.<br>
+           All text translated to different languages were done with ChatGPT after research of what
+           languages were best to represent each creature. Languages used: Albanian, Icelandic, 
+           Italian, English, Latin, Welsh, Old English, and German.</p>
       </div>
-    </section>
-  </div>
-
-  <script src="dist/javascript/script.js"></script>
-
-</body>
-
+    </footer>
+  </body>
 </html>

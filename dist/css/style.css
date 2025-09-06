@@ -1,6 +1,7 @@
 body {
   font-family: Roboto, Helvetica, sans-serif;
   background-color: #ffffff;
+  margin: 0;
 }
 
 header {
@@ -10,6 +11,7 @@ header {
 h1 { 
   font-size: 16px;
   color: #444444;
+  padding-top: 20px;
 }
 
 table {
@@ -36,6 +38,13 @@ th, td {
   margin: 0;
   text-align: left;
   border-bottom: 1px solid #f1f1f1;
+}
+
+footer {
+  margin-top: 60px;
+  color: #5a6765;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -99,91 +108,10 @@ th, td {
 .logotextcontainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* keep both flush left */
-  flex: 1 1 200px;         /* scales down when needed */
+  align-items: flex-start;
+  flex: 1 1 200px;
   max-width: 40%;   
   justify-content: center;
-}
-
-#greenbox {
-  display: grid;
-  grid-template-columns: 80%, 20%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "bank nav"
-    "logo nav"
-    "offers nav";
-}
-
-#logo {
- display: flex;
-  flex-wrap: wrap;      
-  align-items: center;
-  gap: 0;   
-}
-
-#bank {
-  grid-area: bank;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 30px;
-  border-bottom: 1px solid rgb(3, 48, 3);
-  background-color:#017979 
-}
-
-#bank a, #offernav a {
-  text-decoration: none;
-  color: rgb(217, 240, 178);
-  font-weight: lighter;
-}
-
-#bank a:hover, #offernav a:hover {
-  color:#faf05e;
-  text-decoration: underline;
-  font-weight: bold;
-  transition: all 200ms ease-in-out;
-}
-#bank ul{
-  list-style: none;        
-  display: flex;           
-  justify-content: space-evenly; 
-  padding-top: 10px;   
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 20px;            
-  margin: 0;                
-  gap: 30px;
-}
-
-#bank p {
-  color: #ffffff;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-#offernav {
-  grid-area: offers;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  border-bottom: 1px solid rgb(3, 48, 3);
-  background-color:#017979 
-}
-
-#offernav ul {
-  list-style: none;        
-  display: flex;           
-  justify-content: space-evenly; 
-  padding: 10px;               
-  margin: 0;                
-  gap: 30px;
-}
-
-#nav {
-  grid-area: nav;
-  background-color: #00b3b3;
 }
 
 .menu {
@@ -191,22 +119,30 @@ th, td {
 }
 
 .menu-btn {
+  color: #40542a;
   padding: 10px 20px;
   cursor: pointer;
   background-color: #00b3b3;
-  border: none;
+  border-bottom: 2px inset #149797;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   font-size: 14pt;
+
 }
 
 .menu-btn:hover {
   background-color: #35ffff;
+  color:rgb(234, 255, 75);
+  text-shadow: 0 0 5px #e6ff6a, 0 0 10px #ffdc2a;
+  transition: all 400ms ease-in-out;
 }
 
 .leftpointer {
   font-weight: bolder;
 }
 
-/* Hidden by default */
+/*Sidebar Menu Hidden Menu*/
 .dropdown {
   display: none;
   position: absolute;
@@ -224,52 +160,113 @@ th, td {
 .dropdown li a {
   display: block;
   padding: 10px;
-  color: #000000;
+  color: #40542a;
   text-decoration: none;
 }
 
 .dropdown li a:hover {
-  background: #444;
+  background-color: #35ffff;
+  color:rgb(234, 255, 75);
+  text-shadow: 0 0 5px #e6ff6a, 0 0 10px #ffdc2a;
+  transition: all 400ms ease-in-out;
 }
 
 .dropdown.active {
   display: block;
 }
 
-.sparkle {
-  position: relative; /* keeps sparkles positioned relative to this element */
-  display: inline-block;
-  color: #fff;
-  font-size: 2rem;
+#headergrid {
+  display: grid;
+  grid-template-columns: 80%, 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "bank nav"
+    "logo nav"
+    "offers nav";
+}
+
+#logo {
+ display: flex;
+  flex-wrap: wrap;      
+  align-items: center;
+  gap: 0;   
+}
+
+#services {
+  grid-area: bank;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+  border-bottom: 1px solid rgb(3, 48, 3);
+  background-color:#017979 
+}
+
+#services ul{
+  padding-top: 10px;   
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 20px;            
+}
+
+#services p {
+  color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 10px gold;
-  z-index: -1; /* keeps text above sparkles */
+  padding-left: 10px;
 }
 
-.sparkle::before,
-.sparkle::after {
-  content: "✦";
-  position: absolute;
-  color: gold;
-  font-size: 1rem;
-  opacity: 0;
-  animation: sparkle 2s infinite;
-  z-index: -2;
+#offernav {
+  grid-area: offers;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid rgb(3, 48, 3);
+  background-color:#017979 
 }
 
-.sparkle::before {
-  top: -20px;
-  left: 20%;
-  animation-delay: 0.5s;
+#offernav ul {
+  padding: 10px;               
 }
 
-.sparkle::after {
-  bottom: -20px;
-  right: 30%;
-  animation-delay: 1.2s;
+#services a, #offernav a {
+  text-decoration: none;
+  color: rgb(217, 240, 178);
 }
 
-@keyframes sparkle {
-  0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
-  50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+#services a:hover, #offernav a:hover {
+  color:#faf05e;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  text-shadow: 0 0 5px #19ff97, 0 0 10px #16ffad;
+}
+
+#services ul, #offernav ul {
+  list-style: none;        
+  display: flex;           
+  justify-content: space-evenly; 
+  margin: 0;                
+  gap: 30px;
+}
+
+#sidenav {
+  grid-area: nav;
+  background-color: #00b3b3;
+}
+
+#legaltitle {
+  color: #5a6765;
+  font-size: 9pt;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5a6765;
+  width: 200px;
+}
+
+#legal {
+  margin: auto; 
+  width: 828px;
+  padding-top: 10px;
+  font-size: 8pt;
+  padding-bottom: 40px;
 }

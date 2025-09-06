@@ -1,135 +1,160 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lucky Loans - A Pinch Of Magic</title>
+    <meta name="description" content="Magical Elvish-themed banking site!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/fairy/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/style_fairy.css">
+    <script src="javascript/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>CS208 - Elvish Fairy Edition</title>
-  <meta name="description" content="Magical Elvish-themed banking site!">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="dist/css/style_fairy.css">
-</head>
-
-<body>
-  <header>
-    <div id="greenbox">
-      <nav id="bank">
-        <p id="servicespadding">Sevrineth:</p>
-        <ul>
-          <li><a href="#">Ennor</a></li>
-          <li><a href="#">Lómelindi</a></li>
-          <li><a href="#">Alda-dor</a></li>
-        </ul>
-      </nav>
-      <section id="logo">
-        <img class="logo" id="leplogo" src="dist/img/FairyLogo.png" alt="Fairy Loans Logo">
-        <audio id="hover-sound" src="dist/audio/Laugh.wav" preload="auto"></audio>
-        <span class="logotextcontainer">
-            <img class="logotext" src="dist/img/LuckyLoans.png" alt="Lucky Loans Word Art">
-            <img class="mototext" src="dist/img/Moto.png" alt="Alcaro hrestale i-lómelindë" >
-        </span>
-      </section>
-      <nav id="offernav">
-        <ul>
-          <li><a href="#">Laerë Coins</a></li>
-          <li><a href="#">Miriel Hollow</a></li>
-          <li><a href="#">Nimloth Loans</a></li>
-          <li><a href="#">Vëa & Lómi</a></li>
-          <li><a href="#">Estel Investing</a></li>
-          <li><a href="#">Lómelindë Lessons</a></li>
-          <li><a href="#">Alcarë Voyage</a></li>
-        </ul>
-      </nav>
-      <nav id="nav">
-        <nav class="menu">
-        <button id="menu-btn" class="menu-btn"><span class="leftpointer">&lt;</span>Lindu</button>
-          <ul id="dropdown" class="dropdown">
-            <li><a href="index.html">Englîn</a></li>
-            <li><a href="index_leprechaun.html">Leprechaun</a></li>
-            <li><a href="#">Lómelindi</a></li>
-            <li><a href="index_eldritch.html">Alda-dor</a></li>
+  <body>
+    <header>
+      <div id="headergrid">
+        <nav id="services">
+          <p id="servicespadding">Sevrineth:</p>
+          <ul>
+            <li><a href="construction.html">Ennor</a></li>
+            <li><a href="construction.html">Lómelindi</a></li>
+            <li><a href="construction.html">Alda-dor</a></li>
           </ul>
         </nav>
-      </nav>
-    </div>
-    <h1>Miriel Offerath ar Lómelindë Iasathi</h1>
-  </header>
+
+        <section id="logo">
+          <img class="logo" id="leplogo" src="img/fairy/FairyLogo.png" alt="Fairy Loans Logo">
+          <audio id="hover-sound" src="" preload="auto"></audio>
+          <span class="logotextcontainer">
+            <img class="logotext" src="img/fairy/LuckyLoansFairy.png" alt="Lucky Loans Word Art">
+            <img class="mototext" src="img/fairy/MotoFairy.png" alt="Alcaro hrestale i-lómelindë" >
+          </span>
+        </section>
+
+        <nav id="offernav">
+          <ul>
+            <li><a href="construction.html">Laerë Coins</a></li>
+            <li><a href="construction.html">Miriel Hollow</a></li>
+            <li><a href="construction.html">Nimloth Loans</a></li>
+            <li><a href="construction.html">Vëa & Lómi</a></li>
+            <li><a href="construction.html">Estel Investing</a></li>
+            <li><a href="construction.html">Lómelindë Lessons</a></li>
+            <li><a href="construction.html">Alcarë Voyage</a></li>
+          </ul>
+        </nav>
+
+        <nav id="sidenav">
+          <nav class="menu">
+            <button id="menu-btn" class="menu-btn"><span class="leftpointer">&lt;</span>Lindu</button>
+            <div class="menu-filler"></div>
+            <ul id="dropdown" class="dropdown">
+              <li><a href="index.html">Leprechaun</a></li>
+              <li><a href="#">Lómelindi</a></li>
+              <li><a href="index_eldritch.html">Alda-dor</a></li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+
+      <h1>Miriel Offerath ar Lómelindë Iasathi</h1>
+    </header>
   
-  <div class="container">
-    <section class="offer" id="offer1">
-      <h2 class="offer-title">Nimloth Offer 1</h2>
-      <div class="offer-contents">
-      <table>
-        <tr>
-          <th>Ethir</th>
-          <th>Cost</th>
-        </tr>
-        <tr>
-          <td>Purchase Price:</td>
-          <td>$33,500</td>
-        </tr>
-        <tr>
-          <td>Cash Incentive:</td>
-          <td>$0</td>
-        </tr>
-        <tr>
-          <td>Loan Term (Months):</td>
-          <td>48</td>
-        </tr>
-        <tr>
-          <td>Annual Rate (APR):</td>
-          <td>3.2</td>
-        </tr>
-        <tr>
-          <td>Monthly Payment:</td>
-          <td>$725.33</td>
-        </tr>
-        <tr>
-          <td>Total Cost:</td>
-          <td class="final-value">$34,815.62</td>
-        </tr>
-      </table>
-      </div>
-    </section>
+    <div class="container">
+      <section class="offer" id="offer1">
+        <h2 class="offer-title">Nimloth Offerath 1</h2>
+
+        <div class="offer-contents">
+          <table>
+            <tr>
+              <th>Ethir</th>
+              <th>Cáno</th>
+            </tr>
+            <tr>
+              <td>Cála Ethir:</td>
+              <td>$33,500</td>
+            </tr>
+            <tr>
+              <td>Lómi Thindë:</td>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>Aldor Lúmë:</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>Ráta Ambar:</td>
+              <td>3.2</td>
+            </tr>
+            <tr>
+              <td>Lúmë-órë:</td>
+              <td>$725.33</td>
+            </tr>
+            <tr>
+              <td>Cáno Ambar:</td>
+              <td class="final-value">$34,815.62</td>
+            </tr>
+          </table>
+        </div>
+      </section>
     
-    <section class="offer" id="offer2">
-      <h2 class="offer-title">Nimloth Offer 2</h2>
-      <div class="offer-contents">
-      <table>
-        <tr>
-          <th>Ethir</th>
-          <th>Cost</th>
-        </tr>
-        <tr>
-          <td>Purchase Price:</td>
-          <td>$33,500</td>
-        </tr>
-        <tr>
-          <td>Cash Incentive:</td>
-          <td>$500</td>
-        </tr>
-        <tr>
-          <td>Loan Term (Months):</td>
-          <td>48</td>
-        </tr>
-        <tr>
-          <td>Annual Rate (APR):</td>
-          <td>4.1</td>
-        </tr>
-        <tr>
-          <td>Monthly Payment:</td>
-          <td>$746.59</td>
-        </tr>
-        <tr>
-          <td>Total Cost:</td>
-          <td class="final-value">$35,836.15</td>
-        </tr>
-      </table>
+      <section class="offer" id="offer2">
+        <h2 class="offer-title">Nimloth Offerath 2</h2>
+
+        <div class="offer-contents">
+          <table>
+            <tr>
+              <th>Ethir</th>
+              <th>Cáno</th>
+            </tr>
+            <tr>
+              <td>Cála Ethir:</td>
+              <td>$33,500</td>
+            </tr>
+            <tr>
+              <td>Lómi Thindë:</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>Aldor Lúmë:</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>Ráta Ambar:</td>
+              <td>4.1</td>
+            </tr>
+            <tr>
+              <td>Lúmë-órë:</td>
+              <td>$746.59</td>
+            </tr>
+            <tr>
+              <td>Cáno Ambar:</td>
+              <td class="final-value">$35,836.15</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div>
+        <h3 id="legaltitle">Estelëa Alcaro:</h3>
+        <p id="legal">Ilë laerë, miriel vaults, ar thalorë offeredë by Lucky Loans 
+                      arë bindë by the covanthë of the Faerie Realm arë the Circulë 
+                      of Estelëa. Rilë, thërmë, ar shynë may shalë with the tides of 
+                      Lómelindë arë the phases of the Faerie Moon. Ilë carethë arë takenë 
+                      to guardë against unforeseenë enchauntë, vwandrën sprites or hidhë 
+                      magikë may altërë zhëthë or repaymë bonds. By venturë forthë with 
+                      Lucky Loans, thou acceptëthë the charmë, sigilë, ar bindëthë herein, 
+                      ar acknowlëdgestë that no gob’linë, faë, or wëodlandë spirith may 
+                      tamperë withë thëse covanthë outside thë sancëd weave of thë ledgër. 
+                      Offerëngs arë subjecë to blëssingë of goldë, luckë, arë alignmë of 
+                      thë Star-Flowers.<br><br>
+                      All images on these sites were made with DeepAI using various styles.<br>
+                      Word art was done in InkPx word art generator. Favicon from flaticon.com by Freepik.<br>
+                      All text translated to different languages were done with ChatGPT after research of what
+                      languages were best to represent each creature. Languages used: Albanian, Icelandic, 
+                      Italian, English, Latin, Welsh, Old English, and German.</p>
       </div>
-    </section>
-  </div>
-
-   <script src="dist/javascript/script.js"></script>
-
-</body>
-
+    </footer> 
+  </body>
 </html>
